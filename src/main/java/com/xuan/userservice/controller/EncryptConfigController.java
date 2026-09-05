@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
  * </p>
  *
  * @author xuan
- * @since 2026-09-03
+ * @since 2026-09-05
  */
 @RestController
 @RequestMapping("/encrypt-config")

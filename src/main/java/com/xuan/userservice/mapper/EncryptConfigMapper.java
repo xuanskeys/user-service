@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author xuan
- * @since 2026-09-03
+ * @since 2026-09-05
  */
 public interface EncryptConfigMapper extends BaseMapper<EncryptConfig> {
 

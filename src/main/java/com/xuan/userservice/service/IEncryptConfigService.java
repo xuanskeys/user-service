@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author xuan
- * @since 2026-09-03
+ * @since 2026-09-05
  */
 public interface IEncryptConfigService extends IService<EncryptConfig> {
 

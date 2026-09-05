@@ -11,7 +11,7 @@ spring:
         server-addr: 127.0.0.1:8848
         namespace: xueyuan
         group: DEFAULT_GROUP
-        file-extension: yaml
+        file-extension: yaml, properties
       discovery:
         username: xueyuan
         password: 123456
@@ -21,10 +21,18 @@ spring:
   config:
     import:
       - optional:nacos:${spring.application.name}.yml
-      - optional:nacos:encrypt-config.yml
+      - optional:nacos:mail-config.properties
 
 logging:
   level:
-    com.alibaba.cloud.nacos: DEBUG
-    com.alibaba.nacos.client.config: DEBUG
+    com.alibaba.cloud.nacos: INFO
+    com.alibaba.nacos.client.config: INFO
 
+security:
+  login-whitelist:
+    - /user/register
+    - /user/login
+    - /user/send-code
+
+operation-log:
+  enabled: true

@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author xuan
- * @since 2026-09-03
+ * @since 2026-09-05
  */
 @Service
 public class EncryptConfigServiceImpl extends ServiceImpl<EncryptConfigMapper, EncryptConfig> implements IEncryptConfigService {
